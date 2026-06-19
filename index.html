@@ -1,53 +1,151 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>สถานที่ท่องเที่ยวประเทศไทย</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เที่ยวไทย Amazing Thailand</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:linear-gradient(135deg,#0077ff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.gallery{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+}
+
+.content h2{
+    color:#0077ff;
+    margin-bottom:10px;
+}
+
+.content p{
+    color:#555;
+    line-height:1.6;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+    margin-top:40px;
+}
+</style>
+
 </head>
 <body>
 
-    <header>
-        <h1>เที่ยวไทย Amazing Thailand</h1>
-        <p>รวมสถานที่ท่องเที่ยวทั่วประเทศไทย</p>
-    </header>
+<header>
+    <h1>🇹🇭 Amazing Thailand</h1>
+    <p>รวมสถานที่ท่องเที่ยวสวยงามทั่วประเทศไทย</p>
+</header>
 
-    <section class="hero">
-        <h2>ค้นพบความงดงามของไทย</h2>
-    </section>
+<section class="gallery">
 
-    <section class="places">
-
-        <div class="card">
-            <img src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/53/2018/03/19191246/Bangkok-Culture1.jpg" alt="กรุงเทพ">
-            <div class="content">
-                <h3>กรุงเทพมหานคร</h3>
-                <p>เมืองหลวงของประเทศไทย เต็มไปด้วยวัดวาอารามและแหล่งช้อปปิ้ง</p>
-            </div>
+    <div class="card">
+        <img src="https://https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/53/2018/03/19191246/Bangkok-Culture1.jpg" alt="">
+        <div class="content">
+            <h2>กรุงเทพมหานคร</h2>
+            <p>เมืองหลวงของประเทศไทย เต็มไปด้วยวัดวาอาราม แหล่งช้อปปิ้ง และอาหารอร่อย</p>
         </div>
+    </div>
 
-        <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Near_the_Top_of_Doi_Inthanon_2014.jpg" alt="เชียงใหม่">
-            <div class="content">
-                <h3>เชียงใหม่</h3>
-                <p>เมืองแห่งวัฒนธรรม ภูเขา และธรรมชาติอันสวยงาม</p>
-            </div>
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Near_the_Top_of_Doi_Inthanon_2014.jpg" alt="">
+        <div class="content">
+            <h2>เชียงใหม่</h2>
+            <p>เมืองแห่งวัฒนธรรม ภูเขา ธรรมชาติ และอากาศเย็นสบายตลอดปี</p>
         </div>
+    </div>
 
-        <div class="card">
-            <img src="https://assets.grab.com/wp-content/uploads/sites/10/2025/11/24175417/shutterstock_2655114947_1024x683.jpg" alt="ภูเก็ต">
-            <div class="content">
-                <h3>ภูเก็ต</h3>
-                <p>เกาะท่องเที่ยวชื่อดังระดับโลก พร้อมชายหาดสวยงาม</p>
-            </div>
+    <div class="card">
+        <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6rpUAJ54LpJHlCam0RYXxsoeLpEdgcExN2D3oySvrz6pf1RRbEC.jpg" alt="">
+        <div class="content">
+            <h2>ภูเก็ต</h2>
+            <p>เกาะชื่อดังระดับโลก มีชายหาดสวย น้ำทะเลใส และกิจกรรมทางทะเลมากมาย</p>
         </div>
+    </div>
 
-    </section>
+    <div class="card">
+        <img src="https://static.wixstatic.com/media/65d002_4ad0071c42ce4db6b6d08eac31481875~mv2.png/v1/fill/w_568,h_492,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/65d002_4ad0071c42ce4db6b6d08eac31481875~mv2.png" alt="">
+        <div class="content">
+            <h2>กระบี่</h2>
+            <p>สวรรค์ของนักท่องเที่ยวที่รักทะเล หน้าผาหินปูน และหมู่เกาะอันสวยงาม</p>
+        </div>
+    </div>
 
-    <footer>
-        <p>© 2026 Thailand Tourism Gallery</p>
-    </footer>
+    <div class="card">
+        <img src="https://s.isanook.com/tr/0/ui/284/1421291/20900252de82d64d29cd57313db5875f_1590656388.jpg" alt="">
+        <div class="content">
+            <h2>สุโขทัย</h2>
+            <p>เมืองมรดกโลกที่เต็มไปด้วยประวัติศาสตร์และโบราณสถานอันทรงคุณค่า</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://baanpoolvillas.com/wp-content/uploads/2024/12/%E0%B8%9E%E0%B8%B1%E0%B8%97%E0%B8%A2%E0%B8%B2-AFP-1.webp" alt="">
+        <div class="content">
+            <h2>พัทยา</h2>
+            <p>เมืองท่องเที่ยวชายทะเลยอดนิยม ใกล้กรุงเทพฯ เดินทางสะดวก</p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Amazing Thailand Tourism Website</p>
+</footer>
 
 </body>
 </html>
